@@ -17,12 +17,15 @@ function logShout(string) {
 }
 
 function sayHiToGrandma(string) {
-  if (string === "I love you, Grandma.") {
-    return "I love you, too."
-}  else if (string === string.toLowerCase()) {
-    return "I can't hear you!"
-  }
-    else if (string === string.toUpperCase()) {
+  switch (true) {
+    case string === "I love you, Grandma.":
+      return "I love you, too."
+      break;
+    case string === string.toLowerCase():
+      return "I can't hear you!"
+      break;
+    case string === string.toUpperCase():
     return "YES INDEED!"
+    
   }
-  }
+}
